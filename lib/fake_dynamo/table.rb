@@ -221,7 +221,7 @@ module FakeDynamo
     end
 
     def query(data)
-      range_key_present
+      # range_key_present ## TODO szw
       select_and_attributes_to_get_present?(data)
       validate_limit(data)
 
